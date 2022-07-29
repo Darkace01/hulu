@@ -10,7 +10,7 @@ import requests from '../utils/requests';
 interface Props {
   results: Movie[];
 }
-export const Home: NextPage = ({ results }: Props) => {
+export const Home = ({ results }: Props) => {
   return (
     <div className=''>
       <Head>
