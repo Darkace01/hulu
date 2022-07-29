@@ -1,5 +1,4 @@
 import { request } from 'http';
-import type { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
@@ -7,10 +6,10 @@ import Nav from '../components/Nav';
 import Results from '../components/Results';
 import { Movie } from '../types';
 import requests from '../utils/requests';
-interface Props {
-  results: Movie[];
-}
-export const Home = ({ results }: Props) => {
+// interface Props {
+//   results: Movie[];
+// }
+export const Home = ({ results }) => {
   return (
     <div className=''>
       <Head>
@@ -26,7 +25,7 @@ export const Home = ({ results }: Props) => {
 };
 
 export default Home;
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const genre = context.query.genre;
   const request = await fetch(
     `https://api.themoviedb.org/3${

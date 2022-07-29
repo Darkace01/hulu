@@ -24,7 +24,8 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Results.jsx",
-    "components/Thumbnail.jsx"
+    "components/Thumbnail.jsx",
+    "pages/index.jsx"
   ],
   "exclude": [
     "node_modules"
