@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Results.jsx",
-    "components/Thumbnail.jsx",
+    "components/Thumbnail.js",
     "pages/index.jsx"
   ],
   "exclude": [
