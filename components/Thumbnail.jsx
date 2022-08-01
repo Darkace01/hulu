@@ -6,7 +6,7 @@ import { ThumbUpIcon } from '@heroicons/react/outline';
 //   result: Movie;
 // }
 const Thumbnail = forwardRef(({ result }, ref) => {
-  const BASE_URL = 'https://image.tmdb.org/t/p/original/';
+  const BASE_URL = 'https://image.tmdb.org/t/p/original';
   return (
     <div
       ref={ref}
